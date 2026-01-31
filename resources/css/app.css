@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-  .note-editor.note-frame .note-editable{@apply text-white bg-gray-900;}
-  .note-editor .note-placeholder{color:rgba(255,255,255,.55)!important;}
+/* ===== Custom Components ===== */
+@layer components {
+
+  /* Summernote editor - LIGHT MODE */
+  .note-editor.note-frame .note-editable {
+    @apply text-gray-900 bg-white;
+  }
+
+  .note-editor .note-placeholder {
+    color: rgba(0,0,0,.55) !important;
+  }
+
 }
+
+/* ===== Import Admin Light Theme ===== */
+@import "./admin-light.css";
